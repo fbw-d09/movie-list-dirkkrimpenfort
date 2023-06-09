@@ -1,9 +1,10 @@
-class View {
+  class View {
     constructor() {
         this.moviesSection = document.querySelector(".movies");
     }
 
     displayMovieOnPage(data) {
+        
         if (data.Response === "False") {
             alert("Sorry, we can't find this movie!");
         } else {
@@ -18,6 +19,7 @@ class View {
                     <p>${data.Plot}</p>
                 </section>
             `)
+            
         }
     }
 
@@ -28,4 +30,4 @@ class View {
 
 console.log("Hello from View.js");
 
-export default View;
+export default View;  
